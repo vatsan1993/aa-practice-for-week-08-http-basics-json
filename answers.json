@@ -197,15 +197,22 @@
   "12": {
     "endpoint": "Submit an edit for an existing review",
     "request": {
-      "method": "",
-      "URL": "",
-      "headers": null,
-      "body": null
+      "method": "POST",
+      "URL": "/reviews/:reviewId",
+      "headers": {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      "body": {
+        "comment": true,
+        "starRating" : true
+      }
     },
     "response": {
-      "headers": null,
-      "statusCode": null,
-      "body": null
+      "headers": {
+        "Location" : "/products/:productId"
+      },
+      "statusCode": 302,
+      "body": false
     }
   },
   "13": {
