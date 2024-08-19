@@ -160,15 +160,22 @@
   "10": {
     "endpoint": "Submit a new review for a product",
     "request": {
-      "method": "",
-      "URL": "",
-      "headers": null,
-      "body": null
+      "method": "POST",
+      "URL": "/products/:productId/reviews",
+      "headers": {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      "body": {
+        "comment":true,
+        "starRating": true
+      }
     },
     "response": {
-      "headers": null,
-      "statusCode": null,
-      "body": null
+      "headers": {
+        "Location":"/products/:productId"
+      },
+      "statusCode": 302,
+      "body": false
     }
   },
   "11": {
