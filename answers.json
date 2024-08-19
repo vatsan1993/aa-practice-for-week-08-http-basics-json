@@ -234,15 +234,17 @@
   "14": {
     "endpoint": "Ask for all the products in a particular category by tag of the category",
     "request": {
-      "method": "",
-      "URL": "",
-      "headers": null,
-      "body": null
+      "method": "GET",
+      "URL": "/categories/:categoryId/products",
+      "headers":false ,
+      "body": false
     },
     "response": {
-      "headers": null,
-      "statusCode": null,
-      "body": null
+      "headers": {
+        "Content-Type": "text/html"
+      },
+      "statusCode": 200,
+      "body": true
     }
   },
   "15": {
