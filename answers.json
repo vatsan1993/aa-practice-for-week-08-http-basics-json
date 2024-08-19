@@ -87,11 +87,15 @@
       "headers": {
         "Content-Type": "application/x-www-form-urlencoded"
       },
-      "body": "name=Laptop&description=Laptop&price=1000&categories=electronics"
+      "body": {
+        "name" : true,
+        "description": true,
+        "price": true,
+        "categories": true
+      }
     },
     "response": {
       "headers": {
-        "Content-Type": "text/html",
         "Location" : "/products/:productId"
       },
       "statusCode": 302,
