@@ -218,15 +218,17 @@
   "13": {
     "endpoint": "Submit a delete for an existing review",
     "request": {
-      "method": "",
-      "URL": "",
-      "headers": null,
-      "body": null
+      "method": "POST",
+      "URL": "/reviews/:reviewId/delete",
+      "headers": false,
+      "body": false
     },
     "response": {
-      "headers": null,
-      "statusCode": null,
-      "body": null
+      "headers": {
+        "Location": "/products/:productId"
+      },
+      "statusCode": 302,
+      "body": false
     }
   },
   "14": {
